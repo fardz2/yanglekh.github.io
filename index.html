@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="pg"></div>
+        <div class="pb"></div>
+        <div class="pc"></div>
+        <h1 class="F">F</h1>
+        <h1 class="A">A</h1>
+        <h1 class="R">R</h1>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+        const tl = gsap.timeline();
+        const tg = gsap.timeline();
+        const tc = gsap.timeline();
+        tl.to(".pb", { duration: 1, y: -200, ease: "power4.out" })
+        tg.to(".pg", { duration: 1, x: -100, opacity: 1, ease: "power4.out" })
+        tc.to(".pc", { duration: 1, x: 500, ease: "power4.out" })
+
+
+
+    </script>
+</body>
+
+</html>
